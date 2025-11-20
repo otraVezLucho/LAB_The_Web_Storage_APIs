@@ -14,14 +14,14 @@
             <input type="text" class="form-control" id="inputNombrePokemon" placeholder="Ingresa el nombre del pokemon" aria-label="titulo" aria-describedby="basic-addon1">
         </div>        
         <div class="input-group mb-2 d-flex justify-content-center">
-            <button type="submit" class="btn btn-primary" id="botonBuscarPokemon">Buscar</button>
+            <button type="submit" class="btn btn-primary" id="botonBuscarPokemon" onclick="searchPokemon()">Buscar</button>
         </div>
     </div>
     <div>
         <!--Mostrar resultado del Pokemon a buscar-->
     </div>
     <div class="input-group mb-2 d-flex justify-content-center">
-        <button type="submit" class="btn btn-primary" id="botonAdicionarFavorito">Adicionar a Favoritos</button>
+        <button type="submit" class="btn btn-primary" id="botonAdicionarFavorito" onclick="saveFavorite()">Adicionar a Favoritos</button>
     </div>
     <div id="favoritos">        
         <!--Mostrar lista de favoritos Pokemon-->
