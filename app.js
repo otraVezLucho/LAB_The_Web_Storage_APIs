@@ -62,7 +62,7 @@ function updateFavoritesList() {
 
     favs.forEach(p => {
         const div = document.createElement("div");
-        div.className = "pokemon-card";
+        div.className = "pokemon-card listaFavoritos";
         div.innerHTML = `
             <img src="${p.img}" />
             <h3>${p.name}</h3>
@@ -70,3 +70,5 @@ function updateFavoritesList() {
         contenedor.appendChild(div);
     });
 }
+
+updateFavoritesList();
