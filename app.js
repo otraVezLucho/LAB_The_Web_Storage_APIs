@@ -1,7 +1,8 @@
 let pokemonEncontrado = null;
 
 function searchPokemon() {
-    const nombre = document.getElementById("pokemonInput").toLowerCase();
+    const nombre = document.getElementById("inputNombrePokemon").value.toLowerCase();    
+    
     if (nombre === "") {
         alert("Escribe un nombre de Pokémon");
         return;
