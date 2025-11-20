@@ -1,3 +1,19 @@
+function saveFavorite() {
+    if (!currentPokemon) return alert("Primero busca un Pokémon");
+
+    let favs = JSON.parse(localStorage.getItem("favoritos")) || [];
+
+    if (!favs.some(p => p.name === currentPokemon.name)) {
+        favs.push(currentPokemon);
+        localStorage.setItem("favoritos", JSON.stringify(favs));
+        updateFavoritesList();
+    } else {
+        alert("Este Pokémon ya está en favoritos");
+    }
+}
+
+
+
 function updateFavoritesList() {
     const favs = JSON.parse(localStorage.getItem("favoritos")) || [];
     const contenedor = document.getElementById("favoritos");
